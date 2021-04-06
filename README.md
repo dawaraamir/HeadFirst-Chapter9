@@ -1,0 +1,20 @@
+- The heap is where objects live which is garbage collectible
+- The stack is where method invocations and local variables live
+- There are two kinds of variables, instance and local(stack).
+- Instance vars are declared inside class but not method
+- Local vars are declared in methods and/or their parameters
+- Stack frame is the state of the method including which method is on top which is the current running method. A method stays on the stack until it has reached its end closing curly brace (done running).
+- If local var is reference to object only the var goes to the stack, the object still goes to the heap.
+- Instance vars live on the heap inside the object they belong to. 
+- Reference vars value is considered a remote control to the object. 
+- Constructors have code that runs when you instantiate (= new…) Every class has a constructor even if you didn’t write one.
+- If you have more than one constructor in a class that means you have overloaded constructors
+- If you write a constructor with an argument and want a no-arg constructor you have to write another one that takes no-args and if you have more than one constructor they must have different arguments (overloaded constructors) 
+- Even abstract classes have constructors that run since its considered a super class
+- Local vars are alive until the method completes
+- Local vars scope within the method in which the var was declared (you can use a var only when its in scope)
+- There are 3 ways to get rid of an objects reference:
+    - The reference goes out of scope permanently 
+    - Reference is assigned another object 
+    - Reference is explicitly set to null
+
